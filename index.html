@@ -81,20 +81,20 @@
         <label for="bio">Biology:</label>
         <input type="number" id="bio" required><br>
 
-        <label for="java">Python :</label>
-        <input type="number" id="java" required><br>
+        <label for="Python">Python :</label>
+        <input type="number" id="Python" required><br>
 
-        <label for="mo">WEB :</label>
-        <input type="number" id="mo" required><br>
+        <label for="web">WEB :</label>
+        <input type="number" id="web" required><br>
 
-        <label for="scr">CIP :</label>
-        <input type="number" id="scr" required><br>
+        <label for="cip">CIP :</label>
+        <input type="number" id="cip" required><br>
 
-        <label for="kan">UHV :</label>
-        <input type="number" id="kan" required><br>
+        <label for="uhv">UHV :</label>
+        <input type="number" id="uhv" required><br>
 
-        <label for="kan">INT :</label>
-        <input type="number" id="int" required><br>
+        <label for="int">INTERSHIP :</label>
+        <input type="number" id="int" required><br>>
 
         <button type="button" onclick="calculateCGPA()">Calculate SGPA</button>
     </form>
@@ -111,11 +111,11 @@
             var adeMarks = parseInt(document.getElementById("ade").value);
             var mathMarks = parseInt(document.getElementById("math").value);
             var bioMarks = parseInt(document.getElementById("bio").value);
-            var javaMarks = parseInt(document.getElementById("java").value);
-            var moMarks = parseInt(document.getElementById("mo").value);
-            var scrMarks = parseInt(document.getElementById("scr").value);
-            var kanMarks = parseInt(document.getElementById("kan").value);
-            var intMarks = parseInt(document.getElementById("kan").value);
+            var javaMarks = parseInt(document.getElementById("Python").value);
+            var webMarks = parseInt(document.getElementById("web").value);
+            var cipMarks = parseInt(document.getElementById("cip").value);
+            var uhvMarks = parseInt(document.getElementById("uhv").value);
+            var intMarks = parseInt(document.getElementById("int").value);
 
             var totalCredits = 21;
             var totalGradePoints = 0;
@@ -126,9 +126,9 @@
             totalGradePoints += getGradePoints(mathMarks) * 3;
             totalGradePoints += getGradePoints(bioMarks) * 2;
             totalGradePoints += getGradePoints(javaMarks) * 1;
-            totalGradePoints += getGradePoints(moMarks) * 1;
-            totalGradePoints += getGradePoints(scrMarks) * 1;
-            totalGradePoints += getGradePoints(kanMarks) * 1;
+            totalGradePoints += getGradePoints(webMarks) * 1;
+            totalGradePoints += getGradePoints(cipMarks) * 1;
+            totalGradePoints += getGradePoints(uhvMarks) * 1;
             totalGradePoints += getGradePoints(intMarks) * 1;
 
             var cgpa = (totalGradePoints / totalCredits).toFixed(2);
